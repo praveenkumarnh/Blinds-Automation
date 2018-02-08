@@ -1,4 +1,3 @@
-void setup() {
 // pin init
 //room1 = Oliver
 const int pin_room1_vblind1_up = 22;
@@ -31,6 +30,9 @@ const int pin_room6_vblind1_down = 42;
 //room7 = Parents room
 const int pin_room7_vblind1_up = 43;
 const int pin_room7_vblind1_down = 44;
+
+void setup() {
+
 }
 
 void loop() {
