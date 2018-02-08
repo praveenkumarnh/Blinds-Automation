@@ -5,6 +5,7 @@ const uint8_t pin_room1_blind1_up_time = 25;
 const uint8_t pin_room1_blind2_up_time = 24;
 //blind down time
 const uint8_t blind_down = 15;
+const uint8_t pin_room1_blind1_down_time = 15;
 
 // pin init
 //room1 = Oliver
@@ -78,6 +79,19 @@ void room1_up() {
     }
     if(a>=pin_room1_blind2_up_time || digitalRead(pin_room1_blind2_up)==HIGH){
       digitalWrite(pin_room1_blind2_up, LOW);
+    }
+    delay(100);
+    }
+  }
+  void room1_down() {
+  digitalWrite(pin_room1_blind1_down, HIGH);
+  digitalWrite(pin_room1_blind2_down, HIGH);
+  for(float a = 0; a <= time_max; a+=0.1){
+    if(a>=pin_room1_blind1_down_time || digitalRead(pin_room1_blind1_down)==HIGH){
+      digitalWrite(pin_room1_blind1_down, LOW);
+    }
+    if(a>=pin_room1_blind2_down_time || digitalRead(pin_room1_blind2_down)==HIGH){
+      digitalWrite(pin_room1_blind2_down, LOW);
     }
     delay(100);
     }
