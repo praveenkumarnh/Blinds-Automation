@@ -6,6 +6,7 @@ const uint8_t pin_room1_blind2_up_time = 24;
 //blind down time
 const uint8_t blind_down = 15;
 const uint8_t pin_room1_blind1_down_time = 15;
+const uint8_t pin_room1_blind2_down_time = 10;
 
 // pin init
 //room1 = Oliver
