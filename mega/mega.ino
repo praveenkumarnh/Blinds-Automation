@@ -1,3 +1,11 @@
+//time max
+const uint16_t time_max = 28;
+//blind up time
+const uint16_t pin_room1_blind1_up_time = 25;
+const uint16_t pin_room1_blind2_up_time = 24;
+//blind down time
+const uint16_t blind_down = 15;
+
 // pin init
 //room1 = Oliver
 const int pin_room1_vblind1_up = 22;
@@ -31,6 +39,7 @@ const int pin_room6_vblind1_down = 42;
 const int pin_room7_vblind1_up = 43;
 const int pin_room7_vblind1_down = 44;
 
+
 void setup() {
 pinMode(pin_room1_vblind1_up, OUTPUT);
 pinMode(pin_room1_vblind1_down, OUTPUT);
@@ -59,3 +68,17 @@ pinMode(pin_room7_vblind1_down, OUTPUT);
 void loop() {
 
 }
+
+void room1_up() {
+  for(unsigned float a = 0; a < time_max; a+=0.1){
+    digitalWrite(pin_room1_blind1_up, HIGH);
+    digitalWrite(pin_room1_blind2_up, HIGH);
+    if(a>pin_room1_blind1_up_time){
+      digitalWrite(pin_room1_blind1_up, LOW);
+    }
+    if(a>pin_room1_blind2_up_time){
+      digitalWrite(pin_room1_blind2_up, LOW);
+    }
+    delay(100);
+    }
+  }
