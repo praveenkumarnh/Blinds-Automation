@@ -32,7 +32,28 @@ const int pin_room7_vblind1_up = 43;
 const int pin_room7_vblind1_down = 44;
 
 void setup() {
-
+pinMode(pin_room1_vblind1_up, OUTPUT);
+pinMode(pin_room1_vblind1_down, OUTPUT);
+pinMode(pin_room1_blind1_up, OUTPUT);
+pinMode(pin_room1_blind1_down, OUTPUT);
+pinMode(pin_room1_blind2_up, OUTPUT);
+pinMode(pin_room1_blind2_down, OUTPUT);
+pinMode(pin_room2_vblind1_up, OUTPUT);
+pinMode(pin_room2_vblind1_down, OUTPUT);
+pinMode(pin_room2_blind1_up, OUTPUT);
+pinMode(pin_room2_blind1_down, OUTPUT);
+pinMode(pin_room3_blind1_up, OUTPUT);
+pinMode(pin_room3_blind1_down, OUTPUT);
+pinMode(pin_room4_vblind1_up, OUTPUT);
+pinMode(pin_room4_vblind1_down, OUTPUT);
+pinMode(pin_room4_vblind2_up, OUTPUT);
+pinMode(pin_room4_vblind2_down, OUTPUT);
+pinMode(pin_room5_vblind1_up, OUTPUT);
+pinMode(pin_room5_vblind1_down, OUTPUT);
+pinMode(pin_room6_vblind1_up, OUTPUT);
+pinMode(pin_room6_vblind1_down, OUTPUT);
+pinMode(pin_room7_vblind1_up, OUTPUT);
+pinMode(pin_room7_vblind1_down, OUTPUT);
 }
 
 void loop() {
