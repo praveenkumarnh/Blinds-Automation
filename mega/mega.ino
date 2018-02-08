@@ -70,7 +70,7 @@ void loop() {
 }
 
 void room1_up() {
-  for(unsigned float a = 0; a < time_max; a+=0.1){
+  for(float a = 0; a < time_max; a+=0.1){
     digitalWrite(pin_room1_blind1_up, HIGH);
     digitalWrite(pin_room1_blind2_up, HIGH);
     if(a>pin_room1_blind1_up_time){
