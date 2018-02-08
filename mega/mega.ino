@@ -1,10 +1,10 @@
 //time max
-const uint16_t time_max = 28;
+const uint8_t time_max = 28;
 //blind up time
-const uint16_t pin_room1_blind1_up_time = 25;
-const uint16_t pin_room1_blind2_up_time = 24;
+const uint8_t pin_room1_blind1_up_time = 25;
+const uint8_t pin_room1_blind2_up_time = 24;
 //blind down time
-const uint16_t blind_down = 15;
+const uint8_t blind_down = 15;
 
 // pin init
 //room1 = Oliver
